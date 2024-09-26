@@ -210,41 +210,52 @@ updateWallet
 // })
 
 
-const samplePromise = new Promise((resolve, reject) => {
-    let id = null;
-    if (id) {
-        resolve("resolved");
-    } else {
-        reject("rejected")
-    }
-})
-samplePromise
-    .then((res) => {
-        console.log(res);
-    }).catch((err) => {
-        console.log(err);
-    })
+// const samplePromise = new Promise((resolve, reject) => {
+//     let id = null;
+//     if (id) {
+//         resolve("resolved");
+//     } else {
+//         reject("rejected")
+//     }
+// })
+// samplePromise
+//     .then((res) => {
+//         console.log(res);
+//     }).catch((err) => {
+//         console.log(err);
+//     })
 
 
 
-//callback hell
+// //callback hell
     
-addTocart(cart, () => {
-    proceedToPayment(productIds, () => {
-        updateWallet(userId, () => {
-            couponChecking(userId)
-        })
-    })
-})
+// addTocart(cart, () => {
+//     proceedToPayment(productIds, () => {
+//         updateWallet(userId, () => {
+//             couponChecking(userId)
+//         })
+//     })
+// })
 
 
-addTocart(cartItems)
-    .then((productIds) => {
-    proceedToPayment(productIds);
-    })
-    .then((userId) => {
-    updateWallet(userId)
-    })
-    .then((userId) => {
-    couponchecking(userId)
-})
+// addTocart(cartItems)
+//     .then((productIds) => {
+//     proceedToPayment(productIds);
+//     })
+//     .then((userId) => {
+//     updateWallet(userId)
+//     })
+//     .then((userId) => {
+//     couponchecking(userId)
+// })
+
+
+
+Function.prototype.hello=function(){
+    console.log("Hello this is from prototype");
+}
+
+function fun() {
+    
+}
+
