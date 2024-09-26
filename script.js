@@ -265,19 +265,20 @@ updateWallet
 
 let hello = {
     firstName: "Shanavas",
-    lastName:"Rahman"
+    lastName: "Rahman"
+};
+
+function callFunction(hometown,state) {
+    console.log(`${this.firstName} ${this.lastName} from ${hometown},${state}`);
 }
 
-let sampleFunction = function (hometown,state) {
-    console.log(`${this.firstName}${this.lastName} from ${hometown},${state}`);
-}
+callFunction.call(hello, "Palakkad", "Kerala");
 
-sampleFunction.call(hello, "Palakkad","Kerala");
-sampleFunction.apply(hello, ["Palakkad", "Kerala"]);
+callFunction.apply(hello, ["Palakkad", "Kerala"]);
 
-const something = sampleFunction.bind(hello, "Palakkad", "Kerala");
-console.log(something);
-something();
+const sample = callFunction.bind(hello, "Palakkad", "Kerala");
+console.log(sample);
+sample();
 
 
 
