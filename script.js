@@ -273,7 +273,11 @@ let sampleFunction = function (hometown,state) {
 }
 
 sampleFunction.call(hello, "Palakkad","Kerala");
-sampleFunction.apply(hello, ["Palakkad","Kerala"]);
+sampleFunction.apply(hello, ["Palakkad", "Kerala"]);
+
+const something = sampleFunction.bind(hello, "Palakkad", "Kerala");
+console.log(something);
+something();
 
 
 
