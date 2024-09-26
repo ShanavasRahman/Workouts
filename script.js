@@ -268,9 +268,12 @@ let hello = {
     lastName:"Rahman"
 }
 
-let sampleFunction = function (hometown) {
-    console.log(this.firstName + " " + this.lastName, "from" + " " + hometown);
+let sampleFunction = function (hometown,state) {
+    console.log(`${this.firstName}${this.lastName} from ${hometown},${state}`);
 }
 
-sampleFunction.call(hello,"Palakkad");
+sampleFunction.call(hello, "Palakkad","Kerala");
+sampleFunction.apply(hello, ["Palakkad","Kerala"]);
+
+
 
