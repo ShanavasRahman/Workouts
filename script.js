@@ -251,11 +251,26 @@ updateWallet
 
 
 
-Function.prototype.hello=function(){
-    console.log("Hello this is from prototype");
+// Function.prototype.hello=function(){
+//     console.log("Hello this is from prototype");
+// }
+
+// function fun() {
+    
+// }
+
+
+
+//call
+
+let hello = {
+    firstName: "Shanavas",
+    lastName:"Rahman"
 }
 
-function fun() {
-    
+let sampleFunction = function (hometown) {
+    console.log(this.firstName + " " + this.lastName, "from" + " " + hometown);
 }
+
+sampleFunction.call(hello,"Palakkad");
 
