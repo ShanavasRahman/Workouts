@@ -263,22 +263,28 @@ updateWallet
 
 //call
 
-let hello = {
-    firstName: "Shanavas",
-    lastName: "Rahman"
-};
+// let hello = {
+//     firstName: "Shanavas",
+//     lastName: "Rahman"
+// };
 
-function callFunction(hometown,state) {
-    console.log(`${this.firstName} ${this.lastName} from ${hometown},${state}`);
-}
+// function callFunction(hometown,state) {
+//     console.log(`${this.firstName} ${this.lastName} from ${hometown},${state}`);
+// }
 
-callFunction.call(hello, "Palakkad", "Kerala");
+// callFunction.call(hello, "Palakkad", "Kerala");
 
-callFunction.apply(hello, ["Palakkad", "Kerala"]);
+// callFunction.apply(hello, ["Palakkad", "Kerala"]);
 
-const sample = callFunction.bind(hello, "Palakkad", "Kerala");
-console.log(sample);
-sample();
+// const sample = callFunction.bind(hello, "Palakkad", "Kerala");
+// console.log(sample);
+// sample();
+
+
+
+
+
+
 
 
 
